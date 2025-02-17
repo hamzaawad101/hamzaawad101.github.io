@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/picture1.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#strengths">Strengths</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Computer Science Student</p>
+          <h1>
+            Hi,I am <span>Hamza</span><br />
+            Awad from Knoxville,TN
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-----------about----------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am a junior student pursuing a degree in Computer Science with a
+              strong passion for software engineering. With a keen interest in
+              learning new technologies and continuously expanding my knowledge,
+              I am committed to honing my skills and growing as a developer. My
+              goal is to apply my academic learning in real-world projects and
+              contribute to impactful software solutions. I'm eager to take on
+              challenges, collaborate with others, and gain hands-on experience
+              as I work toward my career as a software engineer.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Programing languages</span><br />C++, HTML, CSS</li>
+                <li><span>Development Tools</span><br />VSCode, Git(version control)</li>
+                <li><span>Algorithm Design</span><br />Designing, Optimizing Algorithms, Problem-Solving, Performance Improvement</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Retail Associate-Walmart</span><br />Responsible for stocking shelves,
+                  unloading trucks, and organizing
+                  inventory. Ensured products were
+                  properly displayed and accessible
+                  for customers. Worked efficiently in
+                  a fast-paced environment,
+                  maintaining attention to detail and
+                  helping improve store organization
+                  and customer experience.
+                </li>
+                <li>
+                  <span>Cook-Zaxbys</span><br />Worked as a cook, preparing food
+                  items efficiently while maintaining
+                  high standards of quality and safety.
+                  Collaborated with team members to
+                  ensure timely service and a positive
+                  customer experience. Demonstrated
+                  strong attention to detail,
+                  multitasking, and adaptability in a
+                  fast-paced environment.
+                </li>
+                <li>
+                  <span>Deliver Driver-Papa Johns Pizza</span><br />Performed food prep and delivered
+                  orders to customers in a timely
+                  manner. Ensured accuracy of orders
+                  and maintained high standards of
+                  customer service. Managed
+                  deliveries efficiently while adhering
+                  to safety and company guidelines.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Bearden High School</span><br />Graduated in 2021 with a GPA of 3.5, demonstrating a strong commitment to academic excellence.
+                </li>
+                <li>
+                  <span>Pellissippi state Community College</span><br />Completed two years of coursework while beginning my Computer Science journey, building a solid foundation in the field.
+                </li>
+                <li>
+                  <span>University of Tennessee Knoxville</span><br />Transferred to UTK in Fall 2024 to continue my studies and pursue a Bachelor's degree in Computer Science, aiming to further develop my technical skills and knowledge.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="about-col-2">
+            <img src="images/IMG_1250.jpeg">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-----------Projects----------->
+    <div id="strengths">
+      <div class="container">
+        <h1 class="sub-title">My strengths</h1>
+
+        <div class="strengths-list">
+          <div>
+            <h2>Problem-Solving</h2>
+            <p>
+              Able to break down complex challenges into manageable tasks, leveraging logical reasoning and creativity to find innovative solutions.
+            </p>
+            <a herf="#">learn more</a>
+          </div>
+          <div>
+            <h2>Adaptability</h2>
+            <p>
+              Quickly adjusts to new environments and challenges, thriving in fast-paced settings and eager to embrace change.
+            </p>
+            <a herf="#">learn more</a>
+          </div>
+          <div>
+            <h2>Communication</h2>
+            <p>
+              Strong communication skills, able to clearly convey ideas and collaborate with diverse groups in both written and verbal forms.
+            </p>
+            <a herf="#">learn more</a>
+          </div>
+          <div>
+            <h2>Attention to Detail</h2>
+            <p>
+              Meticulous in my work, ensuring high-quality results through careful review and thorough testing.
+            </p>
+            <a herf="#">learn more</a>
+          </div>
+          <div>
+            <h2>Teamwork & Collaboration</h2>
+            <p>
+              Highly skilled in working with others, whether in small teams or large groups, to achieve common goals. I thrive in collaborative environments, contributing my ideas and supporting others to ensure project success.
+            </p>
+            <a herf="#">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----------My Work---------->
+    <div id="Portfolio">
+      <div class="container">
+        <h1 class="sub-tile">My work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.jpg" />
+            <div class="layer">
+              <h3>Search Algorithem</h3>
+              <p>
+                Implemented a search algorithm using C++ to
+                efficiently find job listings based on title or required skills.
+              </p>
+              <a
+                href="https://github.com/hamzaawad101/cs1020/tree/master/BinarySearchTree"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/work-2.avif" />
+            <div class="layer">
+              <h3>Binary Tree</h3>
+              <p>
+                Used a binary tree to manage and update fitness data from a
+                binary file, supporting add/remove operations and data
+                persistence.
+              </p>
+              <a
+                href="https://github.com/hamzaawad101/cs1020/tree/master/BinarySearchTree"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Class Implementation</h3>
+              <p>
+                Created a class structure to process racer data, calculate race
+                times, and sort results, while checking for potential cheaters.
+              </p>
+              <a
+                href="https://github.com/hamzaawad101/cs1020/tree/master/BinarySearchTree"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+    <!------contact-->
+    
+    <div id="contact">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <div class="contact-info">
+                <div class="contact-box">
+                  <i class="fas fa-envelope"></i>
+                  <p>hamzaawad101a@gmail.com</p>
+                </div>
+                <div class="contact-box">
+                  <i class="fas fa-phone-square-alt"></i>
+                  <p>(865)-591-2117</p>
+                </div>
+                <div class="contact-box">
+                  <a href="https://github.com/hamzaawad101" target="_blank">
+                    <i class="fab fa-github"></i>
+                    <p>github.com/hamzaawad101</p>
+                    <i class="fas fa-link"></i>
+                  </a>
+                </div>
+              </div>
+              <a href="images/HamzaAwadResume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+      
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu(){
+        sidemenu.style.right="0";
+
+      }
+      function closemenu(){
+        sidemenu.style.right="-200px";
+        
+      }
+    </script>
+  </body>
+</html>
